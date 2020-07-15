@@ -23,7 +23,12 @@ html {
     color: black;
 }
 
-.navbar > div{
+.navbar .logo-content-wrap {
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.navbar .item-list {
     display: inline-flex;
     justify-content: flex-end;
 }
@@ -31,33 +36,36 @@ html {
 .navbar .logo {
     justify-content: flex-start;
     display: inline-block;
-    margin: 25px 0 0 55px;
+    margin: 0 0 0 55px;
+    padding-bottom: 15px;
 }
 
-.navbar > div > ul{
+.navbar > div > ul {
     list-style-type: none;
 }
 
-.navbar > div > ul > li{
+.navbar > div > ul > li {
     display: inline-flex;
     justify-content: center;
     margin: 15px;
     padding-right: 15px;
+    padding-top: 5px;
+    vertical-align: middle;
 }
 
-.navbar > div > ul > li:last-of-type{
+.navbar > div > ul > li:last-of-type {
     display: inline-flex;
     justify-content: center;
     margin: 15px;
     padding-right: 65px;
 }
 
-.navbar > div > ul > li > a {
+.navbar .menu-item {
     text-decoration: none;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.navbar > div > ul > li > a:hover {
+.navbar .menu-item:hover {
     font-size: 20px;
     color: blue;
     font-weight: 500;
