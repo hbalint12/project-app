@@ -10,6 +10,9 @@ html {
     box-sizing: inherit;
 }
 
+/* HEADER
+-------------------------------------*/
+
 .navbar {
     height: 80px;
     background-image: url(assets/Rectangle.png);
@@ -72,4 +75,21 @@ html {
     text-decoration: none;
     padding: 0;
     margin: -11px;
+}
+
+
+/* FOOTER
+-------------------------------------*/
+footer {
+    margin-top: 80px;
+}
+
+footer > ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+footer > ul > li {
+    padding: 20px;
 }

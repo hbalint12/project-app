@@ -1,0 +1,94 @@
+/* Introduction
+-------------------------------------*/
+.introduction-wrapper {
+    padding-top: 200px;
+    background: rgb(245, 244, 244);
+    text-align: justify;
+    align-items: center;
+}
+
+.name-job-wrapper {
+    display: block;
+    text-align: justify;
+}
+
+.name-content {
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.job-content {
+    font-size: 35px;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+.text-content{
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+    max-width: 600px;
+    position: relative;
+    text-align: end;
+    margin-left: 500px ;
+}
+
+.summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 75px;
+}
+
+.summary > p {
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+}
+
+.summary > ul {
+    margin-top: 25pxe;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.text-content ul > li{
+    align-content: flex-start;
+}
+
+.image-content {
+    justify-self: center;
+}
+
+.projects {
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+
+.project {
+    display: inline-block;
+    background: rgb(245, 244, 244);
+    max-width: 400px;
+    margin-left: 25px;
+    margin-top: 60px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+}
+
+.project > h6 {
+    font-size: 25px;
+}
+
+.project > img {
+    margin-left: 150px;
+}
+
+.project > p {
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+    padding: 10px 40px;
+}
