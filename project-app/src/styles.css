@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.navbar {
+    height: 80px;
+    background-image: url(assets/Rectangle.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    column-gap: 20px;
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbar > div{
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.navbar .logo {
+    justify-content: flex-start;
+    display: inline-block;
+    margin: 25px 0 0 55px;
+}
+
+.navbar > div > ul{
+    list-style-type: none;
+}
+
+.navbar > div > ul > li{
+    display: inline-flex;
+    justify-content: center;
+    margin: 15px;
+    padding-right: 15px;
+}
+
+.navbar > div > ul > li:last-of-type{
+    display: inline-flex;
+    justify-content: center;
+    margin: 15px;
+    padding-right: 65px;
+}
+
+.navbar > div > ul > li > a {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navbar > div > ul > li > a:hover {
+    font-size: 20px;
+    color: blue;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0;
+    margin: -11px;
+}
