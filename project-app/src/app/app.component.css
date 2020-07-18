@@ -1,93 +1,74 @@
 /* Introduction
 -------------------------------------*/
 .introduction-wrapper {
-    padding-top: 200px;
+    padding-top: 150px;
+    padding-bottom: 50px;
     background: rgb(245, 244, 244);
-    text-align: justify;
-    align-items: center;
-}
-
-.name-job-wrapper {
-    display: block;
-    text-align: justify;
 }
 
 .name-content {
-    font-size: 100px;
-    text-align: center;
+    font-size: 140px;
     font-family: 'Bebas Neue', cursive;
 }
 
 .job-content {
     font-size: 35px;
     font-family: 'Source Code Pro', monospace;
-    text-align: center;
 }
 
 .text-content{
-    margin-top: 45px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 20px;
-    max-width: 600px;
-    position: relative;
-    text-align: end;
-    margin-left: 500px ;
-}
-
-.summary {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin-left: 75px;
+    margin-top: 75px;
+    text-indent: 5%;
+    line-height: 45px;
 }
 
 .summary > p {
+    font-size: 22px;
     text-align: justify;
     font-family: 'Playfair Display', serif;
 }
 
-.summary > ul {
-    margin-top: 25pxe;
+.text-content ul {
+    margin-top: 35px;
     list-style-type: none;
     justify-content: space-evenly;
 }
 
-.text-content ul > li{
-    align-content: flex-start;
+.text-content ul li > a{
+    font-size: 22px;
+    background-color: grey;
+    border-radius: 10%;
+    padding: 5px;
+    color: honeydew;
 }
 
 .image-content {
     justify-self: center;
 }
-
-.projects {
-    display: inline-block;
-    margin-top: 100px;
-    margin-left: 200px;
-}
-
+/*----------------------PROJECTS--------------*/
 
 .project {
     display: inline-block;
     background: rgb(245, 244, 244);
-    max-width: 400px;
+    max-width: 600px;
+    height: 300px;
     margin-left: 25px;
     margin-top: 60px;
     border-color: black;
     border-style: solid;
     border-width: thin;
+    overflow: hidden;
 }
 
-.project > h6 {
+.project  h6 {
     font-size: 25px;
 }
 
-.project > img {
+.project img {
     margin-left: 150px;
 }
 
-.project > p {
+.project p {
     text-align: justify;
     font-family: 'Playfair Display', serif;
     padding: 10px 40px;
