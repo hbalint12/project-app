@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+
+/* HEADER
+-------------------------------------*/
+
+.navbar {
+    height: 80px;
+    background-color: white;
+    background-size: cover;
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbar div > ul {
+    list-style-type: none;
+}
+
+
+.menu-item {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 15px;
+}
+
+.menu-item:hover {
+    font-size: 20px;
+    color: blue;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 5px;
+}
+
+
+/* FOOTER
+-------------------------------------*/
+footer {
+    margin-top: 80px;
+    background: rgb(243, 240, 240);
+}
+
+footer > ul  {
+    padding: 25px;
+    list-style-type: none;
+}
