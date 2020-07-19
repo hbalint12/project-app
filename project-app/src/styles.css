@@ -43,6 +43,7 @@ html {
 -------------------------------------*/
 footer {
     margin-top: 80px;
+    background: rgb(243, 240, 240);
 }
 
 footer > ul  {
