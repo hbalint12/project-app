@@ -6,13 +6,107 @@
     background: rgb(245, 244, 244);
 }
 
+@media screen and (max-width: 376px) {
+    .name-content {
+        font-size: 40px;
+    }
+    .job-content {
+        font-size: 17px;
+    }
+    .summary > p{
+        font-size: 15px;
+    }
+    .summary > img {
+        width: 170px;
+    }
+    .text-content ul li > a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) and (min-width: 376px){
+    .name-content {
+        font-size: 45px;
+    }
+    .job-content {
+        font-size: 20px;
+    }
+    .summary > p{
+        font-size: 18px;
+    }
+    .summary > img {
+        width: 180px;
+    }
+    .text-content ul li > a{
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .name-content {
+        font-size: 60px;
+    }
+    .job-content {
+        font-size: 25px;
+    }
+    .summary{
+        font-size: 20px;
+    }
+    .summary > img {
+        width: 190px;
+    }
+    .text-content ul li > a{
+        font-size: 19px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .name-content {
+        font-size: 70px;
+    }
+    .job-content {
+        font-size: 30px;
+    }
+    .summary{
+        font-size: 22px;
+    }
+    .summary > img {
+        width: 200px;
+    }
+    .text-content ul li > a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .name-content {
+        font-size: 80px;
+    }
+    .job-content {
+        font-size: 30px;
+    }
+    .summary > img {
+        width: 200px;
+    }
+    .text-content ul li > a{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .name-content {
+        font-size: 130px;
+    }
+    .job-content {
+        font-size: 40px;
+    }
+}
+
 .name-content {
-    font-size: 140px;
     font-family: 'Bebas Neue', cursive;
 }
 
 .job-content {
-    font-size: 35px;
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -23,7 +117,6 @@
 }
 
 .summary > p {
-    font-size: 22px;
     text-align: justify;
     font-family: 'Playfair Display', serif;
 }
@@ -35,7 +128,7 @@
 }
 
 .text-content ul li > a{
-    font-size: 25px;
+    /*font-size: 25px;*/
     background-color: rgb(128, 125, 125);
     border-radius: 10%;
     padding: 5px;
@@ -72,9 +165,7 @@
 }
 
 .project {
-    /*display: inline-block;*/
     max-width: 700px;
-    height: 500px;
     margin-top: 100px;
     border-color: rgb(192, 192, 192);
     border-style: solid;
@@ -83,7 +174,6 @@
     overflow: hidden;
     box-shadow: 5px 5px 5px 5px grey; 
     background: linear-gradient(180deg, white 50%,rgba(240, 240, 240, 0.822) 50%);
-    position: relative;
 }
 
 .project h6 {
@@ -101,15 +191,13 @@
 }
 
 .project img {
-    position: absolute;
-    top: 80px;
-    height: 58%;
+    height: 57%;
     width: 100%;
     border: 0;
 }
 
 .project p {
-    margin-top: 75px;
+    margin-top: 0 auto;
     text-align: justify;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
