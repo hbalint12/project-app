@@ -1,0 +1,10 @@
+<div class="container">
+    <h1 class="row justify-content-center">Project categories</h1>
+    <div class="categories row justify-content-center">{{ projectItems | categoryList }}</div>
+</div>
+<div class="d-flex flex-wrap justify-content-around">
+    <app-project-item *ngFor="let projectItem of projectItems"
+    (delete)="onDeleteProjectItem($event)" 
+    [projectItem]="projectItem">
+    </app-project-item>
+</div>

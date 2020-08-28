@@ -1,57 +1,31 @@
-<div class="introduction-wrapper">
-    <div class="container">
-        <div class="col-md-10 col-lg-12">
-            <div class="row justify-content-center align-items-center">
-                <h1 class="col-md-10 col-lg-10 offset-2 offset-sm-1 offset-md-3 offset-lg-4 offset-xl-1 name-content align-self-center">Name Content</h1>
-                <h3 class="col-md-12 col-lg-5 offset-3 offset-1 offset-sm-2 offset-md-7  offset-lg-1 offset-xl-0 job-content">Job title Content</h3>
+<header>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="img-fluid rounded" src="/assets/main-logo.png" alt="Logo"/></a>
+        <ul class="navbar-nav align-items-center justify-content-end">
+          <li class="nav-item"><a routerLink="/" class="nav-link menu-item">Home</a></li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link menu-item" data-toggle="dropdown" id="test_menu_dropdown" aria-haspopup="true" aria-expanded="false" href="#">Test menu 2</a>
+              <div class="dropdown-menu" aria-labelledby="test_menu_dropdown">
+                  <a class="dropdown-item" routerLink="/projectItem" >Test ProjectItem 1</a>
+                  <a class="dropdown-item" href="#">Test Dropdown Item 2</a>
+                  <a class="dropdown-item" href="#">Test Dropdown Item 3</a>
+                  <a class="dropdown-item" routerLink="/projectList">Test Dropdown Item 4</a>
+              </div>
             </div>
-            <div class="text-content">
-                <div class="row justify-content-center summary">
-                    <p class="col-10 col-lg-5 offset-md-2 offset-lg-0">Short Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <img class="col-5 col-lg-2 offset-md-6 offset-lg-0 profile-pic" src="../assets/profile.jpeg" alt="Profile Picture"/>
-                </div>
-                <ul class="row justify-content-start">
-                    <li class="col-6 col-md-9 col-lg-3 offset-3 offset-md-3 offset-lg-3"><a class="" href="#">LinkedIn Profile</a ></li>
-                    <li class="col-7 col-md-12 col-lg-4 offset-2 offset-md-2 offset-lg-0"><a class="" href="">Detailed Introduction</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid">
-    <div class="d-flex flex-wrap justify-content-around">
-        <div class="project d-flex flex-column align-items-center justify-content-between">
-            <h6 class="">Test Project Title 1</h6>
-            <img class="align-self-center img-fluid img-thumbnail" src="../assets/ai.jpeg" alt="Project Picture 1"/>
-            <p class="align-self-end">Project short summary.Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            </p>       
-        </div>
-        <div class="project d-flex flex-column align-items-center justify-content-between">
-            <h6 class="">Test Project Title 1</h6>
-            <img class="align-self-center img-fluid img-thumbnail" src="../assets/ai.jpeg" alt="Project Picture 1"/>
-            <p class="align-self-end">Project short summary.Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            </p>       
-        </div>
-        <div class="project d-flex flex-column align-items-center justify-content-between">
-            <h6 class="">Test Project Title 1</h6>
-            <img class="align-self-center img-fluid img-thumbnail" src="../assets/ai.jpeg" alt="Project Picture 1"/>
-            <p class="align-self-end">Project short summary.Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            </p>       
-        </div>
-        <div class="project d-flex flex-column align-items-center justify-content-between">
-            <h6 class="">Test Project Title 1</h6>
-            <img class="align-self-center img-fluid img-thumbnail" src="../assets/ai.jpeg" alt="Project Picture 1"/>
-            <p class="align-self-end">Project short summary.Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            </p>       
-        </div>
-    </div>  
-</div>
+          </li>
+          <li class="nav-item"><a class="nav-link menu-item" routerLink="/detailedIntro">Introduction</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<router-outlet></router-outlet>
+<!--<app-landingpage></app-landingpage>-->
+<footer class="container-fluid">
+    <ul class="row align-items-center justify-content-center">
+      <li><a class="col" href="#">Test Content 1</a></li>
+      <li><a class="col" href="#">Test Content 2</a></li>
+      <li><a class="col" href="#">Test Content 3</a></li>
+    </ul>
+</footer>
