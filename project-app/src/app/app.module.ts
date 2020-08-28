@@ -31,10 +31,10 @@ import { DetailedIntroComponent } from './detailed-introduction/detailed-introdu
   ],
   providers: [],
   bootstrap: [
-    AppComponent,
-    LandingPageComponent,
-    ProjectItemListComponent,
-    SubscriptionFormComponent
+    AppComponent
+    //LandingPageComponent,
+   // ProjectItemListComponent,
+   // SubscriptionFormComponent
   ]
 })
 export class AppModule { }

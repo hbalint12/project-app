@@ -1,0 +1,57 @@
+.intro-wrapper{
+    margin-bottom: 5%;
+}
+
+.intro-text{
+    font-size: 20px;
+}
+
+.intro-pic {
+    float: right;
+    margin-right: 5%;
+}
+
+aside {
+    float: left;
+    padding-left: 2.5%;
+    width: 30%;
+    padding-top: 2.5%;
+    overflow: auto;
+}
+
+aside > h4 {
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+aside li {
+    font-size: 20px;
+    margin-top: 15%;
+ }
+
+.intro-section {
+    float: right;
+    margin: 0 1.5%;
+    width: 60%;
+}
+
+.intro-section > h1{
+   margin-bottom: 10%;
+   margin-left: 10%;
+   margin-top: 5%;
+}
+
+h4{
+    font-size: 35px;
+    margin-bottom: 2%;
+ }
+
+ section li {
+    font-size: 20px;
+    margin-top: 2%;
+ }
+
+ section p {
+    text-align: justify;
+ }
+

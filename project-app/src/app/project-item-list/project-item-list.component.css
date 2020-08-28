@@ -8,3 +8,7 @@ h1 {
     font-size: 17px;
     font-family: 'Source Code Pro', monospace;
 }
+
+.wrap-list {
+    padding-bottom: 50px;
+}
