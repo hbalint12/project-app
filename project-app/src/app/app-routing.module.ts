@@ -10,10 +10,10 @@ import { DetailedIntroComponent } from './detailed-introduction/detailed-introdu
 
 const routes: Routes = [
   { path: 'detailedIntro', component: DetailedIntroComponent},
-  { path: 'projectItem', component: DetailedProjectComponent},
   { path: 'projectList', component: ProjectItemListComponent},
   { path: 'main', component: LandingPageComponent},
-  { path: '', redirectTo: 'main', pathMatch: 'full'}
+  { path: '', redirectTo: 'main', pathMatch: 'full'},
+  { path: ':id', component: DetailedProjectComponent},
 ];
 
 @NgModule({

@@ -8,10 +8,8 @@
             <div class="dropdown">
               <a class="nav-link menu-item" data-toggle="dropdown" id="test_menu_dropdown" aria-haspopup="true" aria-expanded="false" href="#">Projects</a>
               <div class="dropdown-menu" aria-labelledby="test_menu_dropdown">
-                  <a class="dropdown-item" routerLink="/projectItem" >Test ProjectItem 1</a>
-                  <a class="dropdown-item" href="#">Test Dropdown Item 2</a>
-                  <a class="dropdown-item" href="#">Test Dropdown Item 3</a>
                   <a class="dropdown-item" routerLink="/projectList">List of projects</a>
+                  <a *ngFor="let projectItem of projectItems" class="dropdown-item" [routerLink]="projectItem.id" >{{ projectItem.title }}</a>
               </div>
             </div>
           </li>
@@ -21,7 +19,6 @@
     </nav>
   </header>
 <router-outlet></router-outlet>
-<!--<app-landingpage></app-landingpage>-->
 <footer class="container-fluid">
     <ul class="row align-items-center justify-content-center">
       <li><a class="col" href="#">Test Content 1</a></li>

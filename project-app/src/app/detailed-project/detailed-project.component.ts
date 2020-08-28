@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, NgProbeToken } from '@angular/core'
 import { ProjectItemService } from '../services/project-item.service'
+import { ActivatedRoute } from '@angular/router'
 
 @Component({
     selector: 'app-detailed',
@@ -7,11 +8,14 @@ import { ProjectItemService } from '../services/project-item.service'
     styleUrls: ['./detailed-project.component.css']
 })
 export class DetailedProjectComponent implements OnInit{
-    projectItems;
+    projectItem;
 
-    constructor(private projectItemService: ProjectItemService){}
+    constructor(private projectItemService: ProjectItemService, private activatedRoute: ActivatedRoute){}
 
     ngOnInit(){
-        this.projectItems = this.projectItemService.get();
+        this.activatedRoute.paramMap.subscribe(paramMap => {
+            let projectItemId = paramMap.get('id');
+            this.projectItem = this.projectItemService.getById(projectItemId);
+        })
     }
 }
