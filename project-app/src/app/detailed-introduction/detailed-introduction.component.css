@@ -2,13 +2,10 @@
     margin-bottom: 5%;
 }
 
-.intro-text{
-    font-size: 20px;
-}
-
 .intro-pic {
     float: right;
     margin-right: 5%;
+    margin-bottom: 10%;
 }
 
 aside {
@@ -25,8 +22,7 @@ aside > h4 {
 }
 
 aside li {
-    font-size: 20px;
-    margin-top: 15%;
+    margin-top: 8%;
  }
 
 .intro-section {
@@ -42,7 +38,6 @@ aside li {
 }
 
 h4{
-    font-size: 35px;
     margin-bottom: 2%;
  }
 
@@ -55,3 +50,61 @@ h4{
     text-align: justify;
  }
 
+ @media screen and (max-width: 376px) {
+    aside li {
+        font-size: 15px;
+     }
+     h4{
+        font-size: 20px;
+     }
+     .intro-text, section > p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 377px){
+    aside li {
+        font-size: 15px;
+     }
+     h4{
+        font-size: 20px;
+     }
+     .intro-text, section > p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+ 
+}
+
+@media screen and (min-width: 768px) {
+    aside li {
+        font-size: 16px;
+     }
+     
+}
+
+@media screen and (min-width: 992px) {
+    aside li {
+        font-size: 18px;
+     }
+     h4{
+        font-size: 25px;
+     }
+     .intro-text, section > p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    aside li {
+        font-size: 20px;
+     }
+     h4{
+        font-size: 35px;
+     }
+     .intro-text, section > p{
+        font-size: 20px;
+    }
+}

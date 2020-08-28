@@ -1,3 +1,107 @@
 .item-wrap { 
     padding-bottom: 180px;
 }
+
+.item-wrap h1{
+    padding-bottom: 10px;
+    margin-top: 3%;
+}
+
+.item-wrap h4{
+    padding-bottom: 50px;
+}
+
+aside {
+    float: left;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+    overflow: auto;
+}
+
+aside li {
+    margin-top: 3%;
+}
+
+.content-wrapper {
+    float: right;
+    margin: 0 1.5%;
+}
+
+summary, article {
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+    font-size: larger;
+    margin-bottom: 5%;
+}
+
+img {
+    margin: 1% 0% 2% 2%;
+}
+
+@media screen and (max-width: 376px) {
+    .item-wrap h1{
+        font-size: 30px; 
+    }
+    .item-wrap h4 {
+        font-size: 20px; 
+    }
+}
+
+@media screen and (min-width: 377px){
+    .item-wrap h1{
+        font-size: 35px; 
+    }
+    .item-wrap h4 {
+        font-size: 20px; 
+    }
+    aside {
+        width: 30%;
+    }
+    .content-wrapper {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .item-wrap h1{
+        font-size: 45px; 
+    }
+    .item-wrap h4 {
+        font-size: 20px; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .item-wrap h1{
+        font-size: 50px; 
+    }
+    .item-wrap h4 {
+        font-size: 22px; 
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .item-wrap h1{
+        font-size: 80px; 
+    }
+    .item-wrap h4 {
+        font-size: 35px; 
+    }
+    aside {
+        width: 15%;
+    }
+    .content-wrapper {
+        float: right;
+        margin: 0 1.5%;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .item-wrap h1{
+        font-size: 115px; 
+    }
+    .item-wrap h4 {
+        font-size: 45px; 
+    }
+}
