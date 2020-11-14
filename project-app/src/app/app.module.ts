@@ -11,6 +11,7 @@ import { LandingPageComponent } from './landingpage/landingpage.component'
 import { SubscriptionFormComponent } from './subscription/subscription.component'
 import { DetailedProjectComponent } from './detailed-project/detailed-project.component'
 import { DetailedIntroComponent } from './detailed-introduction/detailed-introduction.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DetailedIntroComponent } from './detailed-introduction/detailed-introdu
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [

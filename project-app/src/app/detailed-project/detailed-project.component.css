@@ -5,10 +5,18 @@
 .item-wrap h1{
     padding-bottom: 10px;
     margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
 }
 
 .item-wrap h4{
     padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
 }
 
 aside {
@@ -40,19 +48,22 @@ img {
 
 @media screen and (max-width: 376px) {
     .item-wrap h1{
-        font-size: 30px; 
-    }
-    .item-wrap h4 {
         font-size: 20px; 
+    }
+    .item-wrap h4, h5 {
+        font-size: 15px; 
+    }
+    summary, article {
+        font-size: medium;
     }
 }
 
 @media screen and (min-width: 377px){
     .item-wrap h1{
-        font-size: 35px; 
+        font-size: 25px; 
     }
-    .item-wrap h4 {
-        font-size: 20px; 
+    .item-wrap h4, h5 {
+        font-size: 18px; 
     }
     aside {
         width: 30%;
@@ -60,32 +71,41 @@ img {
     .content-wrapper {
         width: 65%;
     }
+    summary, article {
+        font-size: medium;
+    }
 }
 
 @media screen and (min-width: 576px) {
     .item-wrap h1{
-        font-size: 45px; 
+        font-size: 28px; 
     }
-    .item-wrap h4 {
-        font-size: 20px; 
+    .item-wrap h4, h5 {
+        font-size: 18px; 
+    }
+    summary, article {
+        font-size: medium;
     }
 }
 
 @media screen and (min-width: 768px) {
     .item-wrap h1{
-        font-size: 50px; 
+        font-size: 30px; 
     }
-    .item-wrap h4 {
-        font-size: 22px; 
+    .item-wrap h4, h5 {
+        font-size: 18px; 
+    }
+    summary, article {
+        font-size: medium;
     }
 }
 
 @media screen and (min-width: 992px) {
     .item-wrap h1{
-        font-size: 80px; 
-    }
-    .item-wrap h4 {
         font-size: 35px; 
+    }
+    .item-wrap h4, h5 {
+        font-size: 25px; 
     }
     aside {
         width: 15%;
@@ -95,13 +115,16 @@ img {
         margin: 0 1.5%;
         width: 80%;
     }
+    summary, article {
+        font-size: medium;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .item-wrap h1{
-        font-size: 115px; 
+        font-size: 50px; 
     }
-    .item-wrap h4 {
-        font-size: 45px; 
+    .item-wrap h4, h5 {
+        font-size: 30px; 
     }
 }

@@ -13,8 +13,9 @@
         <div class="content-wrapper">
             <h1 class="col-md-9 offset-2">{{ projectItem.title }}</h1>
             <h4 class="col-md-6 offset-xlg-5 offset-md-4 offset-3">{{ projectItem.subheader }}</h4>
-            <summary class="col-7 offset-3">{{ projectItem.summary }}</summary>
-            <article class="col-9 offset-2">{{ projectItem.description }}</article>
+            <summary class="col-7 offset-3" [innerHTML]="projectItem.summary "></summary>
+            <h5 class="col-9 offset-2">Abstract</h5>
+            <article class="col-9 offset-2" [innerHTML]="projectItem.abstract"></article>
         </div>
     </div>
 </div>

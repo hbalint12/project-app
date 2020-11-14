@@ -15,8 +15,6 @@ html {
      background-size: cover;
  }
  
- 
- 
  .navbar a {
      color: black;
  }
@@ -26,16 +24,24 @@ html {
  }
  
  @media screen and (min-width: 575px) {
-     .menu-item:hover {
+     /*.menu-item:hover {
          font-weight: 500;
          font-size: 20px;
          margin: 1px;
-     }
+     }*/
  }
  
  @media screen and (max-width: 575px) {
      .navbar{
          margin-bottom: 50px;
+     }
+     .navbar-collapse {
+         background-color:white;
+     }
+     .dropdown{
+        background-color: white;
+        z-index: 1;
+        opacity:1;
      }
  }
  @media screen and (min-width: 1075px) {
@@ -61,8 +67,6 @@ html {
      text-decoration: none;
  }
  
- 
- 
  /* FOOTER
  -------------------------------------*/
  footer {
@@ -70,6 +74,12 @@ html {
  }
  
  footer > ul  {
-     padding: 25px;
+     padding: 20px;
      list-style-type: none;
+ }
+
+ .stamp {
+     padding-top: 15px;
+     font-style: italic;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
