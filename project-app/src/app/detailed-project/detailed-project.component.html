@@ -1,6 +1,6 @@
 <div class="container-fluid item-wrap">
     <div class="row justify-content-center">
-        <aside class="">
+        <aside class="col-md-2 offset-0">
             Project categories
             <ul>
                <li *ngFor="let category of projectItem.categoryList">{{ category }}</li>
@@ -10,12 +10,11 @@
                <li *ngFor="let technology of projectItem.technologyList">{{ technology }}</li>
             </ul>
         </aside>
-        <div class="content-wrapper">
-            <h1 class="col-md-9 offset-2">{{ projectItem.title }}</h1>
-            <h4 class="col-md-6 offset-xlg-5 offset-md-4 offset-3">{{ projectItem.subheader }}</h4>
-            <summary class="col-7 offset-3" [innerHTML]="projectItem.summary "></summary>
-            <h5 class="col-9 offset-2">Abstract</h5>
-            <article class="col-9 offset-2" [innerHTML]="projectItem.abstract"></article>
+        <div class="content-wrapper" >
+            <h1 class="col-md-9 offset-md-2 offset-0">{{ projectItem.title }}</h1>
+            <h4 class="col-md-6 offset-xlg-5 offset-md-4 offset-md-3 offset-0">{{ projectItem.subheader }}</h4>
+            <summary class="col-md-7 col-8 offset-md-3 offset-2" [innerHTML]="projectItem.summary"></summary>
+            <div class="articles col-md-9 col-11 offset-md-2 offset-1" *ngFor="let desc of projectItem.description" [innerHTML]="desc"></div>
         </div>
     </div>
 </div>

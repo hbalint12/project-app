@@ -6,6 +6,8 @@
     background: rgb(245, 244, 244);
 }
 
+
+
 @media screen and (max-width: 376px) {
     .name-content {
         font-size: 25px;
@@ -24,6 +26,19 @@
     }
     .introduction-wrapper {
         padding-top: 30px;
+    }
+
+    .profile-pic{
+        height: 5%;
+    }
+    .text-content{
+        margin-top: 25px;
+        text-indent: 5%;
+        line-height: 25px;
+    }
+
+    ul li {
+        padding: 10px;
     }
 }
 
@@ -46,6 +61,21 @@
     .introduction-wrapper {
         padding-top: 30px;
     }
+
+    .text-content{
+        margin-top: 75px;
+        text-indent: 5%;
+        line-height: 45px;
+    }
+    .text-content ul li > a:hover{
+        text-decoration: none;
+        font-size: 25px;
+        background-color: rgb(165, 159, 159);
+        border-radius: 10%;
+        padding: 5px;
+        color: honeydew;
+        text-shadow: 0.65px 0.65px limegreen;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -66,6 +96,21 @@
     }
     .introduction-wrapper {
         padding-top: 30px;
+    }
+
+    .text-content{
+        margin-top: 75px;
+        text-indent: 5%;
+        line-height: 45px;
+    }
+    .text-content ul li > a:hover{
+        text-decoration: none;
+        font-size: 25px;
+        background-color: rgb(165, 159, 159);
+        border-radius: 10%;
+        padding: 5px;
+        color: honeydew;
+        text-shadow: 0.65px 0.65px limegreen;
     }
 }
 
@@ -119,11 +164,6 @@
     font-family: 'Source Code Pro', monospace;
 }
 
-.text-content{
-    margin-top: 75px;
-    text-indent: 5%;
-    line-height: 45px;
-}
 
 .summary > p {
     text-align: justify;
@@ -145,15 +185,7 @@
 }
 
 
-.text-content ul li > a:hover{
-    text-decoration: none;
-    font-size: 25px;
-    background-color: rgb(165, 159, 159);
-    border-radius: 10%;
-    padding: 5px;
-    color: honeydew;
-    text-shadow: 0.65px 0.65px limegreen;
-}
+
 
 .image-content {
     justify-self: center;

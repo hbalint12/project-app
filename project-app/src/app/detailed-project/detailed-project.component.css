@@ -46,6 +46,20 @@ img {
     margin: 1% 0% 2% 2%;
 }
 
+article {
+    text-indent: 50px;
+    margin: 15px;
+}
+
+.img-with-text {
+    text-align: center;
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 376px) {
     .item-wrap h1{
         font-size: 20px; 

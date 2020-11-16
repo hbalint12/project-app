@@ -3,9 +3,13 @@
 }
 
 .intro-pic {
-    float: right;
+    float: center;
     margin-right: 5%;
     margin-bottom: 10%;
+}
+
+.name-content{
+  justify-content: right;
 }
 
 aside {
@@ -55,10 +59,17 @@ h4{
         font-size: 15px;
      }
      h4{
-        font-size: 20px;
+        font-size: 25px;
      }
      .intro-text, section > p{
-        font-size: 16px;
+        font-size: 15px;
+    }
+    .intro-wrapper h1 {
+        text-align: center;
+    }
+
+    h5 {
+        font-size: smaller;
     }
 }
 
@@ -67,10 +78,13 @@ h4{
         font-size: 15px;
      }
      h4{
-        font-size: 20px;
+        font-size: 25px;
      }
      .intro-text, section > p{
         font-size: 16px;
+    }
+    .intro-pic {
+        float: right;
     }
 }
 

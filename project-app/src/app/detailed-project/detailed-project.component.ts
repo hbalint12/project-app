@@ -1,11 +1,12 @@
-import { Component, OnInit, NgProbeToken } from '@angular/core'
+import { Component, OnInit, NgProbeToken, ViewEncapsulation } from '@angular/core'
 import { ProjectItemService } from '../services/project-item.service'
 import { ActivatedRoute } from '@angular/router'
 
 @Component({
     selector: 'app-detailed',
     templateUrl: './detailed-project.component.html',
-    styleUrls: ['./detailed-project.component.css']
+    styleUrls: ['./detailed-project.component.css'],
+    encapsulation: ViewEncapsulation.None
 })
 export class DetailedProjectComponent implements OnInit{
     projectItem;

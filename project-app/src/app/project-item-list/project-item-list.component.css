@@ -11,6 +11,12 @@ h1 {
     padding-bottom: 50px;
 }
 
+@media screen and (max-width: 376px) {
+    h1 {
+        font-size: 45px;
+    }
+}
+
 @media screen and (min-width: 992px) {
     h1 {
         font-size:100px;
@@ -21,7 +27,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 377px) and (max-width: 991px) {
     h1 {
         font-size: 65px;
     }
