@@ -1,0 +1,32 @@
+.subscription-text{
+    margin-top: 10%;
+    padding-top: 5%;
+}
+
+.subscription-text > h4{
+    font-size: 80px;
+}
+
+.subscription-text > p{
+    font-size: 30px;
+}
+
+form  > ul {
+    list-style-type: none;
+    margin-top: 5%;
+}
+
+form  > ul > li{
+    padding: 5%;
+}
+
+form  > ul > li > label{
+    margin-right: 5%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
